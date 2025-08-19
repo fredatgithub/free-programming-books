@@ -132,7 +132,7 @@ Example:
 - <a id="in_process"></a>In-process books:
 
     ```text
-    GOOD: * [Will Be An Awesome Book Soon](http://example.com/book2.html) - John Doe (HTML) (:construction: *in process*)
+    GOOD: * [Will Be An Awesome Book Soon](http://example.com/book2.html) - John Doe (HTML) *(:construction: in process)*
     ```
 
 - <a id="archived"></a>Archived link:
@@ -140,6 +140,23 @@ Example:
     ```text
     GOOD: * [A Way-backed Interesting Book](https://web.archive.org/web/20211016123456/http://example.com/) - John Doe (HTML) *(:card_file_box: archived)*
     ```
+    
+- <a id="license"></a>Free Licenses (While we include resources that are "All Rights Reserved" but free to read, we encourage the use of free licenses, such as Creative Commons):
+
+    ```text
+    GOOD: * [A Very Awesome Book](https://example.org/book.pdf) - Jane Roe (PDF) (CC BY-SA)
+    ```
+
+    Supported Licences (no versioning):
+
+    - `CC BY` 'Creative Commons attribution'
+    - `CC BY-NC` 'Creative Commons non-commercial'
+    - `CC BY-SA` 'Creative Commons share-alike'
+    - `CC BY-NC-SA` 'Creative Commons non-commercial, share-alike'
+    - `CC BY-ND` 'Creative Commons no-derivatives'
+    - `CC BY-NC-ND` 'Creative Commons non-commercial, no-derivatives'
+    - `GFDL` 'Gnu Free Documentation License'
+
 
 ### Alphabetical order
 
@@ -269,3 +286,52 @@ If you can print it out and retain its essence, it's not an Interactive Tutorial
 
 - You may specify more than one file to check, using a single space to separate each entry.
 - If you specify more than one file, results of the build are based on the result of the last file checked. You should be aware that you may get passing green builds due to this so be sure to inspect the build log at the end of the Pull Request by clicking on "Show all checks" -> "Details".
+
+
+### Fixing RTL/LTR linter errors
+
+If you run the RTL/LTR Markdown Linter (on `*-ar.md`, `*-he.md`, `*-fa.md`, `*-ur.md` files) and see errors or warnings:
+
+- **LTR words** (e.g. “HTML”, “JavaScript”) in RTL text: append `&rlm;` immediately after each LTR segment;
+- **LTR symbols** (e.g. “C#”, “C++”): append `&lrm;` immediately after each LTR symbol;
+
+#### Examples
+
+**BAD**
+```html
+<div dir="rtl" markdown="1">
+* [كتاب الأمثلة في R](URL) - John Doe (PDF)
+</div>
+```
+**GOOD**
+```html
+<div dir="rtl" markdown="1">
+* [كتاب الأمثلة في R&rlm;](URL) - John Doe&rlm; (PDF)
+</div>
+```
+---
+**BAD**
+```html
+<div dir="rtl" markdown="1">
+* [Tech Podcast - بودكاست المثال](URL) – Ahmad Hasan, محمد علي
+</div>
+```
+**GOOD**
+```html
+<div dir="rtl" markdown="1">
+* [Tech Podcast - بودكاست المثال](URL) – Ahmad Hasan,&rlm; محمد علي
+</div>
+```
+---
+**BAD**
+```html
+<div dir="rtl" markdown="1">
+* [أساسيات C#](URL)
+</div>
+```
+**GOOD**
+```html
+<div dir="rtl" markdown="1">
+* [أساسيات C#&lrm;](URL)
+</div>
+```

@@ -12,6 +12,7 @@
     * [函数式概念](#函数式概念)
     * [计算机图形学](#计算机图形学)
     * [其它](#其它)
+    * [人工智能](#人工智能)
     * [软件开发方法](#软件开发方法)
     * [设计模式](#设计模式)
     * [数据库](#数据库)
@@ -62,6 +63,7 @@
     * [PHP](#php)
         * [Laravel](#laravel)
         * [Symfony](#symfony)
+        * [Yii](#yii)
     * [PostgreSQL](#postgresql)
     * [Python](#python)
         * [Django](#django)
@@ -184,6 +186,11 @@
 * [深入理解并行编程](http://ifeve.com/perfbook/)
 * [SAN 管理入门系列](https://community.emc.com/docs/DOC-16067)
 * [Sketch 中文手册](http://sketchcn.com/sketch-chinese-user-manual.html#introduce)
+
+
+### 人工智能
+
+* [动手实战人工智能](https://aibydoing.com) - huhuhang
 
 
 ### 软件开发方法
@@ -314,6 +321,8 @@
 * [新概念 C 语言教程](https://github.com/limingth/NCCL)
 * [Beej's Guide to Network Programming 簡體中文版](https://beej-zhtw-gitbook.netdpi.net) - Brian "Beej Jorgensen" Hall, 廖亚伦译
 * [C 语言常见问题集](http://c-faq-chn.sourceforge.net/ccfaq/ccfaq.html)
+* [C 语言教程](https://wangdoc.com/clang/)
+* [C 语言入门教程](https://www.dotcpp.com/course/c/)
 * [Linux C 编程一站式学习](https://web.archive.org/web/20210514225440/http://docs.linuxtone.org/ebooks/C&CPP/c/) *(:card_file_box: archived)*
 
 
@@ -393,7 +402,7 @@
 * [Go 语言设计与实现](https://draveness.me/golang) - draveness
 * [Go 语言实战笔记](https://github.com/rujews/go-in-action-notes)
 * [Go 指南](https://tour.go-zh.org/list) (《A Tour of Go》中文版)
-* [Go Web 编程](https://github.com/astaxie/build-web-application-with-golang)
+* [Go Web 编程](https://astaxie.gitbooks.io/build-web-application-with-golang/content/zh/) - astaxie
 * [Go实战开发](https://github.com/astaxie/go-best-practice)
 * [Go语言博客实践](https://github.com/achun/Go-Blog-In-Action)
 * [Java程序员的Golang入门指南](http://blog.csdn.net/dc_726/article/details/46565241)
@@ -631,6 +640,11 @@
 * [Symfony 5 快速开发](https://web.archive.org/web/20210812222957/symfony.com/doc/current/the-fast-track/zh_CN/index.html) *(:card_file_box: archived)*
 
 
+#### Yii
+
+* [Yii 2.0 权威指南](https://www.yiiframework.com/doc/download/yii-guide-2.0-zh-cn.pdf) - Yii Software (PDF)
+
+
 ### PostgreSQL
 
 * [PostgreSQL 8.2.3 中文文档](http://works.jinbuguo.com/postgresql/menu823/index.html)
@@ -694,6 +708,8 @@
 
 * [通过例子学习 Rust](https://github.com/rustcc/rust-by-example/)
 * [Rust 官方教程](https://github.com/KaiserY/rust-book-chinese)
+* [Rust 宏小册](https://zjp-cn.github.io/tlborm/)
+* [Rust 语言圣经](https://course.rs)
 * [Rust 语言学习笔记](https://github.com/photino/rust-notes)
 * [RustPrimer](https://github.com/rustcc/RustPrimer)
 * [Tour of Rust](https://tourofrust.com/00_zh-cn.html)
